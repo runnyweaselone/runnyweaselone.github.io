@@ -12,6 +12,11 @@ body {
     margin: 0%;
     padding: 0px;
 }
+.overlay{
+    display: grid;
+    grid-template-rows: 100vw;
+    
+}
 #particles-js {
     top: 0;
     left: 0;
