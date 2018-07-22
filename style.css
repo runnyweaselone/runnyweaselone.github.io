@@ -5,8 +5,8 @@
 	box-sizing: border-box;
 	transition: all ease;
 }
-
-html,body {
+html{overflow-x: hidden;}
+body {
 	overflow-x: hidden;}
 body {	
 	width: 100vw;
