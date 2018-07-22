@@ -13,7 +13,6 @@ body {
     padding: 0px;
 }
 
-}
 #particles-js {
     top: 0;
     left: 0;
@@ -165,7 +164,7 @@ body {
    
 }
 .superwrapper{
-    height: 1700px;
+    height: 5700px;
     width: 100vw;
     position: relative;
     top: 0px;
@@ -349,7 +348,7 @@ body {
     width:100vw;
     height:400px;
     color:white;
-    background:black;
+    /* background:black; */
     display:flex;
     flex-direction:row;
    justify-content:space-around;
@@ -357,7 +356,7 @@ body {
   .sub{
    
      overflow:hidden;
-    flex-basis:18.8vw;
+    flex-basis:32vw;
     display:flex;
     flex-direction:column;
     transition:.3s all ease;
@@ -367,7 +366,7 @@ body {
     transform:scale(1.1);
   }
   .circlecover{
-    width:18.8vw;
+    width:32vw;
     position:absolute;
     top:50px;  
     display:flex;
@@ -392,7 +391,7 @@ body {
     margin:auto;
   }
   .subcontentcover{
-    width:18.8vw;
+    width:32vw;
     position:absolute;
     top:250px;
     display:flex;
@@ -414,9 +413,9 @@ body {
   .subcontent span{
     margin:auto;
   }
-  #i1{background:url('i1.jpg') no-repeat;
+  #i1{background:url('rovo1.png') no-repeat;
     background-attachment:fixed;
-    background-size:cover;
+    background-size:contain;
     position:relative;}
   #i2{background:url('i2.jpg') no-repeat;
     background-attachment:fixed;
@@ -426,9 +425,9 @@ body {
     background-attachment:fixed;
     background-size:cover;
     position:relative;}
-  #i4{background:url('i4.jpg') no-repeat;
+  #i4{background:url('IdeaLab_test_tube.png') no-repeat;
     background-attachment:fixed;
-    background-size:cover;
+    background-size:contain;
     position:relative;}
   #i5{background:url('i5.jpg') no-repeat;
     background-attachment:fixed;
