@@ -6,8 +6,9 @@
 	transition: all ease;
 }
 
-body {
-	overflow-x: hidden;
+html,body {
+	overflow-x: hidden;}
+body {	
 	width: 100vw;
 	margin: 0%;
 	padding: 0px;
