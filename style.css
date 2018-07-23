@@ -942,8 +942,8 @@ small {
 	 
 	}
 	.star1 ,.star2{
-		width:100vh;
-		height: 100vh;
+		width:90vh;
+		height: 90vh;
 	}
 }
 @media only screen and (max-width:576px){
@@ -955,7 +955,7 @@ small {
 	 
 	}
 	.star1 ,.star2{
-		width:110vw;
-		height: 110vw;
+		width:90vw;
+		height: 90vw;
 	}
 }
