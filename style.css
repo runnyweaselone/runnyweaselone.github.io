@@ -2,13 +2,12 @@
 	/* outline: 1px solid green; */
 	margin: 0%;
 	padding: 0px;
-	box-sizing: border-box;
+	box-sizing:border-box;
 	transition: all ease;
 }
-html{overflow-x: hidden;}
+
 body {
-	overflow-x: hidden;}
-body {	
+	overflow-x: hidden;
 	width: 100vw;
 	margin: 0%;
 	padding: 0px;
@@ -31,9 +30,14 @@ body {
 	width: 100vw;
 	height: 5700px;
 }
-
-.space {
-	height: 115px;
+#slideup{
+	height:100vh;
+	width: 100vw;
+}
+.colum1{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 }
 
 .content {
@@ -41,12 +45,17 @@ body {
 	display: flex;
 	flex-direction: row;
 }
+.colcenter{
+	display: flex;
+	flex-direction: column;
+}
 
 .logo {
+	margin: auto;
 	height: 38vw;
 	background: url('LOGO1.png') no-repeat center;
 	background-size: contain;
-	max-height: 400px;
+	/* max-height: 400px; */
 }
 
 .spacem {
@@ -55,7 +64,7 @@ body {
 
 .year {
 	background: url('201812.png') no-repeat center;
-	height: 12vh;
+	height: 8vw;
 	background-size: contain;
 }
 
@@ -131,13 +140,21 @@ body {
 	z-index: 99;
 	top: 0px;
 	left: 0px;
-	display: flex;
+	
+	
 }
+.starcon{
+	position: absolute;;
+	top:0px;
+	left: 0px;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
 
+}
 .star1 {
-	position: absolute;
-	top: 20px;
-	left: 25vw;
+	margin:auto;
 	background: url('stars2.svg') no-repeat center;
 	background-size: contain;
 	height: 50vw;
@@ -158,12 +175,11 @@ body {
 	animation-duration: 8000ms;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
+	display: flex;
 }
 
 .star2 {
-	position: absolute;
-	top: 20px;
-	left: 25vw;
+	margin:auto;
 	background: url('stars3.svg') no-repeat center;
 	background-size: contain;
 	height: 50vw;
@@ -248,12 +264,12 @@ body {
 }
 
 .aboutus {
-	color: white;
+	color: seashell;
 	margin-top: 100px;
 	margin-left: -10px;
 	width: 100vw;
 	height: 500px;
-	text-align: center;
+	/* text-align: center; */
 	background: #041527;
 	/* background:url('pexels-photo-744672.jpeg') no-repeat center;
         
@@ -263,7 +279,8 @@ body {
 }
 
 .bigtext {
-	font-size: 3vw;
+	font-size: 2vw;
+	color: white;
 }
 
 .aboutus p {
@@ -342,14 +359,55 @@ body {
 	height: 40px;
 	font-size: 18px;
 }
+.mySlides {display: none;}
 
+
+/* Slideshow container */
+.slideshow-container {
+  width:30vw;
+  position: relative;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 4s;
+  animation-name: fade;
+  animation-duration: 4s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
 .astrobig {
 	width: 30vw;
 	margin-left: 5vw;
 	height: 216px;
 	position: absolute;
 	top: 0px;
-	font-size: 40px;
+	font-size: 30px;
 	font-weight: 900;
 	font-family: "lato";
 }
@@ -868,5 +926,36 @@ body {
 }
 
 small {
-	font-size: 23px;
+	font-size: 20px;
+}
+
+@media only screen and (max-width:992px){
+	#slideup{
+		display: flex;
+
+	}
+	.colcenter{
+		margin: auto;
+	}
+	.logo{
+	 height:70vh;
+	 
+	}
+	.star1 ,.star2{
+		width:100vh;
+		height: 100vh;
+	}
+}
+@media only screen and (max-width:576px){
+	.colcenter{
+		height:100vh;
+	}
+	.logo{
+	 height:60vh;
+	 
+	}
+	.star1 ,.star2{
+		width:110vw;
+		height: 110vw;
+	}
 }
