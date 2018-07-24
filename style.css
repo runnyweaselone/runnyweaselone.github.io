@@ -1,11 +1,13 @@
 * {
-	/* outline: 1px solid green; */
+	outline: 1px solid green;
 	margin: 0%;
 	padding: 0px;
 	box-sizing:border-box;
 	transition: all ease;
 }
-html{overflow-x: hidden;}
+html{
+	overflow-x: hidden;
+}
 body {
 	overflow-x: hidden;
 	width: 100vw;
@@ -160,19 +162,19 @@ body {
 	height: 50vw;
 	width: 50vw;
 	-webkit-animation-name: spin;
-	-webkit-animation-duration: 8000ms;
+	-webkit-animation-duration:24000ms;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
 	-moz-animation-name: spin;
-	-moz-animation-duration: 8000ms;
+	-moz-animation-duration: 24000ms;
 	-moz-animation-iteration-count: infinite;
 	-moz-animation-timing-function: linear;
 	-ms-animation-name: spin;
-	-ms-animation-duration: 8000ms;
+	-ms-animation-duration: 24000ms;
 	-ms-animation-iteration-count: infinite;
 	-ms-animation-timing-function: linear;
 	animation-name: spin;
-	animation-duration: 8000ms;
+	animation-duration: 24000ms;
 	animation-iteration-count: infinite;
 	animation-timing-function: linear;
 	display: flex;
@@ -184,22 +186,22 @@ body {
 	background-size: contain;
 	height: 50vw;
 	width: 50vw;
-	-webkit-animation-name: spin;
-	-webkit-animation-duration: 14000ms;
+	/* -webkit-animation-name: spin;
+	-webkit-animation-duration: 24000ms;
 	-webkit-animation-iteration-count: infinite;
 	-webkit-animation-timing-function: linear;
 	-moz-animation-name: spin;
-	-moz-animation-duration: 14000ms;
+	-moz-animation-duration: 24000ms;
 	-moz-animation-iteration-count: infinite;
 	-moz-animation-timing-function: linear;
 	-ms-animation-name: spin;
-	-ms-animation-duration: 14000ms;
+	-ms-animation-duration: 24000ms;
 	-ms-animation-iteration-count: infinite;
 	-ms-animation-timing-function: linear;
 	animation-name: spin;
-	animation-duration: 14000ms;
+	animation-duration: 24000ms;
 	animation-iteration-count: infinite;
-	animation-timing-function: linear;
+	animation-timing-function: linear; */
 }
 
 .superwrapper {
@@ -265,8 +267,8 @@ body {
 
 .aboutus {
 	color: seashell;
-	margin-top: 100px;
-	margin-left: -10px;
+
+
 	width: 100vw;
 	height: 500px;
 	/* text-align: center; */
@@ -311,7 +313,7 @@ body {
 .astro {
 	color: white;
 	width: 100vw;
-	height: 550px;
+	height: 100vh;
 	display: flex;
 	flex-direction: row;
 }
@@ -337,25 +339,25 @@ body {
 
 .astrocontent {
 	width: 50vw;
-	height: 550px;
+	height: 100vh;
 	display: flex;
 	flex-direction: column;
 }
 
 .astrocontentsub {
 	margin: auto;
-	height: 550px;
+	height: 100vh;
 	width: 50vw;
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 }
 
 .astroheading {
 	margin-left: 5vw;
 	width: 25vw;
-	position: absolute;
-	top: 214px;
+	
 	height: 40px;
 	font-size: 18px;
 }
@@ -405,8 +407,7 @@ body {
 	width: 30vw;
 	margin-left: 5vw;
 	height: 216px;
-	position: absolute;
-	top: 0px;
+	
 	font-size: 30px;
 	font-weight: 900;
 	font-family: "lato";
@@ -416,15 +417,13 @@ body {
 	width: 35vw;
 	margin-left: 5vw;
 	height: 160px;
-	position: absolute;
-	top: 300px;
+	
 }
 
 .astrobutton {
 	width: 190px;
 	margin-left: 5vw;
-	position: absolute;
-	top: 470px;
+	
 	display: flex;
 }
 
@@ -466,6 +465,7 @@ body {
 	flex-basis: 32vw;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 	transition: .3s all ease;
 }
 
@@ -475,8 +475,7 @@ body {
 
 .circlecover {
 	width: 32vw;
-	position: absolute;
-	top: 50px;
+	
 	display: flex;
 	flex-direction: row;
 }
@@ -506,8 +505,7 @@ body {
 
 .subcontentcover {
 	width: 32vw;
-	position: absolute;
-	top: 250px;
+	
 	display: flex;
 }
 
@@ -958,4 +956,168 @@ small {
 		width:100vw;
 		height: 100vw;
 	}
+	
+	/* .aboutus p {
+		font-size: 1.5vw;
+		margin: auto;
+		border-left: 4px solid black;
+	} */
+		  /* modal para */
+		  .astro{
+			  flex-direction: column;
+		  }
+		  .astroimage {
+			width: 100vw;
+			height: 40vh;
+			/* background:url('bristol-2.svg') no-repeat;
+			
+				background-size:40vw; */
+			/* position: relative;
+			display: flex;
+			flex-direction: column-reverse; */
+		}
+		.astroimaged{display: none;} 
+		.constal1 {
+			
+			width: 40vh;
+			height: 40vh;
+			margin: auto;
+			
+		}
+		
+		.constal2 {
+			
+			width: 30vh;
+			height: 30vh;
+			
+		}
+		
+		.planet {
+			
+			width: 20vh;
+			height: 20vh;
+			
+		}
+		
+		.planet1 {
+			
+			width: 10vh;
+			height: 10vh;
+		}
+
+		.astrocontent {
+			width: 100vw;
+			height: 60vh;
+			
+		}
+		
+		.astrocontentsub {
+		
+			height: 60vh;
+			width: 100vw;
+			
+		}
+		
+		
+	
+		
+		
+		/* Slideshow container */
+		.slideshow-container {
+		  width:80vw;
+		  
+		}
+		
+		
+		
+	
+		.astrobig {
+			width: 100vw;
+			margin-left: 0vw;
+		
+		    font-size: 20px;
+			
+			
+		}
+		.astrotext {
+			display: none;
+			/* width: 80vw;
+			margin-left: 10vw;
+			font-size: 13px;
+			padding: 5px;
+			outline: 1px solid white; */
+
+			
+		}
+		
+		.astrobutton {
+			width: 40vw;
+			margin-left: 30vw;
+			
+			display: flex;
+		}
+		
+		.astrobutton a {
+			width: 40vw;
+			color: white;
+			text-align: center;
+			font-size: 15px;
+			padding: 13px;
+			border: 1px solid white;
+			/* border-radius: 30px; */
+			margin: auto;
+			text-decoration: none;
+			transition: all 300ms ease;
+		}
+		
+		.astrobutton a:hover {
+			transform: scale(1.1);
+		}
+		
+		.s8 {
+			width: 100vw;
+			height: 150vh;
+			
+			display: flex;
+			flex-direction: column;
+			justify-content: space-around;
+		}
+		
+		.sub {
+			
+			flex-basis: 90vw;
+			height: 50vh;
+			display: flex;
+			
+		}
+		
+		.sub:hover {
+			transform: scale(1.1);
+		}
+		
+		.circlecover {
+			margin: auto;
+			width: 30vh;
+			height: 30vh;
+		
+		}
+		
+		
+		
+		.circle {
+			
+			width: 35vw;
+			height: 35vw;
+			
+		}
+		
+	
+		
+		.subcontentcover {
+			display: none;
+		}
+		
+		
+		
+		
 }
