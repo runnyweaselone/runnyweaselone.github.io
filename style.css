@@ -18,19 +18,26 @@ body {
 #particles-js {
 	top: 0;
 	left: 0;
-	height: 5700px;
+	height: 4500px;
 	width: 100vw;
 	background-color: #041527;
 	display: block;
 }
-
+.particlesjs{
+	top: 0;
+	left: 0;
+	height: 4500px;
+	width: 100vw;
+	background-color: #041527;
+	display: block;
+}
 .overlay {
 	position: absolute;
 	top: 0;
 	left: 0;
 	z-index: 999;
 	width: 100vw;
-	height: 5700px;
+	height: 4500px;
 }
 #slideup{
 	height:100vh;
@@ -136,7 +143,7 @@ body {
 }
 
 #stars {
-	height: 5700px;
+	height: 4500px;
 	width: 100vw;
 	position: absolute;
 	z-index: 99;
@@ -205,7 +212,7 @@ body {
 }
 
 .superwrapper {
-	height: 5700px;
+	height: 4500px;
 	width: 100vw;
 	position: relative;
 	top: 0px;
@@ -278,6 +285,7 @@ body {
         background-size: 100vw; */
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 }
 
 .bigtext {
@@ -287,7 +295,7 @@ body {
 
 .aboutus p {
 	font-size: 1.5vw;
-	margin: auto;
+	
 	border-left: 4px solid black;
 }
 
@@ -565,8 +573,9 @@ body {
 }
 
 .s7 {
+	overflow: hidden;
 	width: 100vw;
-	height: 700px;
+	height: 1000px;
 	background: black;
 	color: white;
 	display: flex;
@@ -579,6 +588,7 @@ body {
 	position: relative;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-around;
 }
 
 .contacthead {
@@ -594,8 +604,7 @@ body {
 	font-size: 20px;
 	line-height: 48px;
 	text-align: center;
-	position: absolute;
-	top: 125.5px;
+	
 	height: 122.5px;
 }
 
@@ -603,8 +612,7 @@ body {
 	width: 60vw;
 	display: flex;
 	font-size: 20px;
-	position: absolute;
-	top: 293.5px;
+	
 	height: 42px;
 }
 
@@ -634,6 +642,8 @@ body {
 }
 
 .box {
+	border: 1px solid white;
+	border-radius: 10%;
 	overflow: hidden;
 	position: relative;
 }
@@ -956,7 +966,9 @@ small {
 		width:100vw;
 		height: 100vw;
 	}
-	
+	.aboutus{
+		height: 70vh;
+	}
 	/* .aboutus p {
 		font-size: 1.5vw;
 		margin: auto;
@@ -1121,3 +1133,117 @@ small {
 		
 		
 }
+
+svg.astronaut{
+	width:50vw;
+}
+  .arm-left{
+  animation: armSwipe 5s 1s infinite ease-in-out;
+  transform-origin: left top;
+  }
+  @keyframes armSwipe{
+    0%{transform: rotate(-10deg);}
+    50%{transform: rotate(0deg);}
+      100%{transform: rotate(-10deg);}
+  }
+  .arm-right{
+    animation: armRightSwipe 5s 1s infinite ease-in-out;
+    transform-origin: right top;
+  }
+  @keyframes armRightSwipe {
+    0%{transform: rotate(-1deg);}
+    50%{transform: rotate(-5deg);}
+      100%{transform: rotate(-1deg);}
+  }
+  .astronaut{
+    width: 50%;
+    height: auto;
+    overflow: visible;
+    animation: Levitation 5s 1s infinite ease-in-out;
+  }
+  @keyframes Levitation{
+    0%{transform: translateY(100px);}
+    50%{transform: translateY(80px); }
+    100%{transform: translateY(100px);}
+  }
+  .leg-right{
+    animation: LegSwipe 5s 1s infinite ease-out;
+    transform-origin: left bottom;
+  }
+  @keyframes LegSwipe {
+    0%{transform: rotate(8deg);}
+    50%{transform: rotate(5deg);}
+    100%{transform: rotate(8deg);}
+  }
+  /* .leg-left{
+  
+  } */
+  @keyframes LegLeftSwipe {
+    0%{transform: rotate(2deg);}
+    50%{transform: rotate(0deg);}
+    100%{transform: rotate(2deg);}
+  }
+  .reflect{
+    animation: faceOpacity 5s 1s infinite;
+  }
+  @keyframes faceOpacity {
+    0%{opacity: 0.7;}
+    70%{opacity: 1;}
+    100%{opacity: 0.7;}
+  }
+  .eye-right{
+    animation: eyeBlink 5s infinite step-start 0s;
+  }
+  .eye-left{
+    animation: eyeLeftBlink 5s infinite step-start 0s;
+  
+  }
+  @keyframes eyeBlink {
+    90%{transform: none; animation-timing-function: ease-in;}
+    93%{transform: translateY(135px) scaleY(0);}
+    100%{animation-timing-function: ease-in;}
+  }
+  @keyframes eyeLeftBlink {
+    90%{transform: none; animation-timing-function: ease-in;}
+    93%{transform: translateY(155px) scaleY(0);}
+    100%{animation-timing-function: ease-in;}
+  }
+  .stars{
+    width: 800px;
+    fill:#fff;
+    overflow: visible;
+    animation: starsRotate 155s 1s linear;
+    transform-origin: center;
+  }
+  @keyframes starsRotate {
+    0%{transform: rotate(0deg);}
+    100%{transform: rotate(360deg);}
+  }
+  
+  @media only screen and (max-width:576px){
+	  .s7{width: 100vw;
+		height: 100vh;
+		  position: relative;
+		  display: flex;
+		  flex-direction: column;
+		  justify-content: flex-start;
+	  }
+	  svg.astronaut{
+		  width:100vw;
+
+	  }
+	  .contacthead,.contactbody {
+		  display:none;
+	  }
+	 .contactbox{
+		 width: 100vw;
+		 position: absolute;
+		 top:70vh;
+		 left:0px;
+		 height: 42px;
+		 display: flex;
+	 }
+	 .contactbutton{
+		 margin: auto;
+	 }
+  }
