@@ -40,7 +40,13 @@ function showSlides() {
 }
 function rm(){
     if(window.innerWidth<=576){
+       
+
         $("#particles-js").remove();
+    
+        
+       
+        
     }
     
 }
